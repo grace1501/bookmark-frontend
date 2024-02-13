@@ -75,7 +75,7 @@ function App() {
                 <p>{b.description}</p>
                 <button onClick={async () => {
                   try {
-                    await fetch(`${BASE_URL}/bookmarks` + b._id, {
+                    await fetch(`${BASE_URL}/bookmarks/` + b._id, {
                       method: "DELETE",
                     })
                     setDeleteToggle(!deleteToggle)
